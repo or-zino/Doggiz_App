@@ -1,0 +1,253 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDEDE"
+    tools:context=".PagesUi.DogProfile">
+
+
+
+    <FrameLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bluebackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dog Profile"
+            android:layout_marginTop="5dp"
+            android:textColor="#E1DDDD"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/myProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/user"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/dogProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:textSize="35dp"
+            android:text="Dog's Name"
+            />
+
+    </FrameLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/dogProfileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+        app:civ_shadow="true"
+        app:civ_border="false"
+        android:src="@drawable/ic_baseline_add_24" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="374dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogProfileImage">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A97EB6D6"
+            app:corner_radius="80dp"/>
+
+        <TextView
+            android:id="@+id/dogProfileEmptyText"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="177dp"
+            android:textSize="25dp"
+            android:text="Dog Information"
+            android:textStyle="bold"
+            android:textColor="#595858"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dogProfileEmptyText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="176dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogProfileEmptyText" />
+
+        <LinearLayout
+            android:id="@+id/emailLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogProfileEmptyText2">
+
+            <ImageView
+                android:id="@+id/emailImageview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/ic_baseline_person_outline_24" />
+
+            <TextView
+                android:id="@+id/dogProfileOwnerTextview"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="Owner's Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLinear">
+
+            <ImageView
+                android:id="@+id/phoneImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/breed" />
+
+            <TextView
+                android:id="@+id/dogProfileBreedTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="Breed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/videoLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneLinear">
+
+            <ImageView
+                android:id="@+id/viedoImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/vet" />
+
+            <TextView
+                android:id="@+id/dogProfileVetTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="Vet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instegramLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoLinear">
+
+            <ImageView
+                android:id="@+id/instegramImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/birthday" />
+
+            <TextView
+                android:id="@+id/dogProfileDateTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="Date Of Birth" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dogProfileEditBtn"
+            android:layout_width="238dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="35dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/roundedbutton2"
+            android:textColor="#DFDFDF"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Edit"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instegramLinear" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_van"
+    app:startDestination="@id/dogProfile">
+
+    <fragment
+        android:id="@+id/dogProfile"
+        android:name="com.example.doggiz_app.PagesUi.DogProfile"
+        android:label="fragment_dog_profile"
+        tools:layout="@layout/fragment_dog_profile" />
+    <fragment
+        android:id="@+id/events"
+        android:name="com.example.doggiz_app.PagesUi.Events"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+    <fragment
+        android:id="@+id/medicalBag"
+        android:name="com.example.doggiz_app.PagesUi.medicalBag"
+        android:label="fragment_medical_bag"
+        tools:layout="@layout/fragment_medical_bag" />
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.doggiz_app.PagesUi.Map"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+</navigation>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doggiz_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:noHistory="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Doggiz_App">
+        <activity
+            android:name=".PagesUi.RegisterPart2"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.EditDogInfo"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.RemoveMedicalBag"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.AddEvent"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".Backend.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.AddingMedicalBag"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.AddingDog"
+            android:exported="false" />
+        <activity
+            android:name=".Backend.MapBack"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.PersonProfile"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.Register"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.MyDog"
+            android:exported="false" />
+        <activity
+            android:name=".PagesUi.LogIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

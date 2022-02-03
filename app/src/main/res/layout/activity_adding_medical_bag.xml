@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pawwallpaper2"
+    tools:context=".PagesUi.AddingMedicalBag">
+
+
+    <FrameLayout
+        android:id="@+id/constraint100"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bluebackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:text="Medical Bag"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#E1DDDD"
+            android:textSize="30sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/insideLainer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="Vaccine"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:text="Medical pills"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:text="Treatment"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                >
+            <ImageView
+                android:id="@+id/imageVaccine"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/medshotcolor"
+                android:layout_marginStart="30dp"/>
+                <ImageView
+                    android:id="@+id/imagePills"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/medpillscolor"
+                    android:layout_marginStart="40dp"/>
+                <ImageView
+                    android:id="@+id/imageTreatment"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/medtreatmentcolor"
+                    android:layout_marginStart="60dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+<!--    <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--        android:id="@+id/dogImageView"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="110dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/constraint1"-->
+<!--        app:civ_shadow="true"-->
+<!--        app:civ_border="false"-->
+<!--        android:src="@drawable/ic_baseline_add_24" />-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/medicalConstraint2"
+        android:layout_width="374dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint100">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D2FCFDFF"
+            app:corner_radius="80dp"/>
+
+        <TextView
+            android:id="@+id/medicalDescription"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:text="medical Description"
+            android:textStyle="bold"
+            android:textColor="#595858"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/medicalDateImage"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalDescription"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+
+            />
+
+        <TextView
+            android:id="@+id/medicalDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="176dp"
+            android:textSize="20sp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalDateImage" />
+
+        <LinearLayout
+            android:id="@+id/medicalDescriptionLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicalDateText">
+
+            <EditText
+                android:id="@+id/medicalDescriptionText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Description:" />
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/medicalAddBtn"
+
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        app:backgroundTint="@null"
+        android:background="@drawable/roundedbutton2"
+        android:textColor="#DFDFDF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicalConstraint2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

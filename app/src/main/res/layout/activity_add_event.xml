@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pawwallpaper2"
+    tools:context=".PagesUi.AddEvent">
+
+    <FrameLayout
+        android:id="@+id/constraint1000"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bluebackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:text="Adding New Event"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#E1DDDD"
+            android:textSize="30sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Choose a Date"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/calendarImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/schedule"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/eventConstraint"
+        android:layout_width="374dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint1000">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D2FCFDFF"
+            app:corner_radius="80dp"/>
+
+        <TextView
+            android:id="@+id/eventDescriptionTextView"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:text="Event Description"
+            android:textStyle="bold"
+            android:textColor="#595858"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/EventDateText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="01/01/01"
+            android:textSize="25dp"
+            android:visibility="gone"
+            android:textColor="#616060"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDescriptionTextView" />
+
+
+
+        <LinearLayout
+            android:id="@+id/EventDescriptionLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EventDateText2">
+
+            <EditText
+                android:id="@+id/eventTitleText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Title:" />
+
+            <EditText
+                android:id="@+id/eventDescriptionText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Description:" />
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/eventAddNewBtn"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        app:backgroundTint="@null"
+        android:background="@drawable/roundedbutton2"
+        android:textColor="#32326E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventConstraint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

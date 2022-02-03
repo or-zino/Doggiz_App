@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "457171967064",
+    "firebase_url": "https://myandroidproject-d6f5b-default-rtdb.firebaseio.com",
+    "project_id": "myandroidproject-d6f5b",
+    "storage_bucket": "myandroidproject-d6f5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457171967064:android:7fc851a4288c7481373e2d",
+        "android_client_info": {
+          "package_name": "com.example.doggiz_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457171967064-pjbeovb5isbpuc6qhsuj2hrg2abde4rt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi9IgOQPY0lhWAVGUeiLp_-Xq8xqrm4wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457171967064-pjbeovb5isbpuc6qhsuj2hrg2abde4rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
